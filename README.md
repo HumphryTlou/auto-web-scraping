@@ -46,8 +46,10 @@ Add the following line to run the script every minute:
 ```
 The above cron job runs every minute of every hour, every day, every month, and every day of the week. Modify the schedule as required, e.g:
 
+```bash
 m h d m w    
 0 * * * *    every hour
 0 0 * * *    everyday at midnight
 30 3 * * 0   every Sunday at 3:30 AM
 */5 * * * *  every 5 minutes
+```
