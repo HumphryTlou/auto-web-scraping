@@ -13,21 +13,36 @@ url = os.getenv("URL")
 scraped_data_dir = os.getenv("SCRAPED_DATA_DIR")
 log_file = os.getenv("LOG_FILE")
 
-table_attribs = [
+# table_attribs = [ # Daily Data
+#     "Contract",
+#     "Opening Price",
+#     "High",
+#     "Low",
+#     "Volume",
+#     "Turnover",
+#     "Open Interest",
+#     "Open Interest Change",
+#     "Closing Price",
+#     "Settlement Price",
+#     "Previous Settlement Price",
+#     "Price Change1",
+#     "Price Change2",
+# ]
+
+table_attribs = [ # Weekly Data
     "Contract",
     "Opening Price",
     "High",
     "Low",
-    "Volume",
-    "Turnover",
+    "Closing Price",
+    "Price Change",
     "Open Interest",
     "Open Interest Change",
-    "Closing Price",
-    "Settlement Price",
-    "Previous Settlement Price",
-    "Price Change1",
-    "Price Change2",
+    "Week-End Settlement",
+    "Volume",
+    "Turnover",
 ]
+
 
 def log_progress(message):
     """Log progress messages with a timestamp."""
